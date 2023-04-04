@@ -10,7 +10,8 @@
     {
       "name": "enterprise.age",
       "type": "java.lang.Integer",
-      "sourceType": "com.zezai.domain.Enterprise"
+      "sourceType": "com.zezai.domain.Enterprise",
+      "defaultValue": 0
     },
     {
       "name": "enterprise.name",
