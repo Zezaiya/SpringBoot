@@ -1,0 +1,9 @@
+name: zezai
+
+server:
+  port: 8080
+
+enterprise:
+  name: tanwenze
+  age: 20
+  tel: 18273272340
