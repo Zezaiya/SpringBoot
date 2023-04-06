@@ -68,4 +68,11 @@ Application类的作用:其实这个类就替代了Spring配置类,Spring容器�
 同时进行单元测试时,也不用再写@ContextConfiguration(classes = SpringConfig.class)
 ---------------------------------------------------------------------------------------------------------------------------
                                            SpringBoot整合Mybatis
+Spring的操作:                                                           SpringBoot的操作:
+ 1.编写JdbcConfig配置类,负责配置jdbc以及注册驱动
+ 2.编写jdbc.property资源类,里面储存具体的jdbc连接信息    ------>            1.在yml文件中编写具体的jdbc连接信息
+ 3.编写Mybatis配置类,负责获取工厂对象以及dao代理对象(Bean)  ----->           2.在需要被代理的接口添加@Mapper注解
+ 4.在SpringConfig核心配置类里@Import引入上文的两个配置类
+   并@PropertySource声明引用的资源对象
 
+Spring里的其余操作都已经在导入的Starter坐标里实现,只需要我们填写具体的配置信息即可
